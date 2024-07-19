@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UedashikA - Dental Care</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <!-- css -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom js -->
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="w-full fixed top-0 z-50 bg-white">
+      <nav
+        class="flex items-center justify-between py-8 wrapper relative"
+      >
+        <div class="flex items-center gap-16">
+          <div>
+            <a href="/" class="text-2xl font-bold text-black">
+              Ueda<span class="text-blue">shikA</span>
+            </a>
+          </div>
+          <div
+            class="hidden lg:flex gap-8 font-medium text-base text-black justify-center items-start"
+            id="menu-box"
+          >
+            <a href="/" class="text-hover hover:text-gold">Home</a>
+            <a href="#about" class="text-hover hover:text-gold">About</a>
+            <a href="#service" class="text-hover hover:text-gold">Service</a>
+            <a href="#appointment" class="text-hover hover:text-gold">Appointment</a>
+            <a href="#contact" class="text-hover hover:text-gold">Contact</a>
+          </div>
+        </div>
+        <div class="lg:hidden">
+          <button id="openmenu-btn">
+            <iconify-icon
+              icon="ci:menu-alt-02"
+              class="text-black text-4xl"
+            ></iconify-icon>
+          </button>
+        </div>
+        <div class="hidden lg:inline-block">
+          <a
+            href="#"
+            class="bg-blue text-white flex items-center justify-between gap-2 py-3 px-5 font-bold text-base rounded-lg shadow-600 hover:bg-blue-hover transition duration-300"
+          >
+            <iconify-icon icon="uil:calender"></iconify-icon>
+            Book an Appointment</a
+          >
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed bg-blue top-0 left-0 right-0 bottom-0 px-[5%] py-8 origin-right animate-open-menu hidden"
+        >
+          <div class="flex items-center justify-between">
+            <h4 class="text-2xl font-bold text-white">UedashikA</h4>
+            <button id="closemenu-btn">
+              <iconify-icon
+                icon="jam:close"
+                class="text-4xl text-white"
+              ></iconify-icon>
+            </button>
+          </div>
+          <nav
+            class="gap-8 font-medium flex flex-col text-white items-start text-4xl w-full h-full justify-center"
+            id="menu-box"
+            aria-label="mobile"
+          >
+            <a href="/" class="text-hover hover:text-gold">Home</a>
+            <a href="#about" class="text-hover hover:text-gold">About</a>
+            <a href="#service" class="text-hover hover:text-gold">Service</a>
+            <a href="#appointment" class="text-hover hover:text-gold">Appointment</a>
+            <a href="#contact" class="text-hover hover:text-gold">Contact</a>
+            <a
+            href="#"
+            class="bg-gold text-black flex items-center justify-between gap-2 py-3 px-5 font-bold text-base rounded-lg shadow-600 hover:bg-yellow-500 transition duration-300"
+          >
+            <iconify-icon icon="uil:calender"></iconify-icon>
+            Book an Appointment</a
+          >
+          </n>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="mt-28 text-black">
+      <!-- Hero Section -->
+      <section class="wrapper flex flex-col md:flex-row gap-10 lg:gap-0 w-full lg:items-end items-center mb-20 lg:-mt-14">
+        <div class="md:w-1/2 py-10 lg:py-0">
+          <h6 class="title-snap">changing life with one smile</h6>
+          <h1 class="text-black font-medium text-5xl lg:text-[64px] leading-[140%] mb-6">Discover your and your family best smile with our dentist</h1>
+          <p class="lg:w-4/5 text-gray-text font-medium text-lg leading-[150%] mb-10">
+            Experience enhanced efficiency, heightened productivity, and a greater edge over your competitors with these advanced capabilities. We have considered our solutions for all of a support
+          </p>
+          <div class="flex gap-3 lg:gap-7 flex-wrap items-center mb-10">
+            <a href="#" class="primary-btn">
+              <iconify-icon icon="uil:calender" class="text-base"></iconify-icon>
+              Book an Appointment
+            </a>
+            <a href="#" class="bg-white text-black gap-2 py-5 px-6 flex items-center rounded-lg text-base font-bold hover:underline transition duration-300">
+              <iconify-icon icon="dashicons:phone" class="text-base"></iconify-icon>
+              Call us : 940-394-3344
+            </a>
+          </div>
+          <div class="flex items-center gap-2 md:gap-10">
+            <div class="bg-gray-light p-5 rounded-2xl">
+              <div class="flex gap-[10px] items-center mb-[10px]">
+                <img src="assets/img/vector/circle.png" alt="circle">
+                <h4 class="font-semibold text-black text-3xl md:text-4xl">40+</h4>
+              </div>
+              <div>
+                <p class="text-sm md:text-base text-black">Professional Dentist</p>
+              </div>
+            </div>
+            <div class="bg-gray-light p-5 rounded-2xl">
+              <div class="mb-[10px]">
+                <p class="text-sm md:text-base text-black">200k+ Our People Join</p>
+              </div>
+              <div class="flex">
+                <div class="avatar-hero">
+                  <img src="assets/img/avatar-1.png" alt="avatar-1">
+                </div>
+                <div class="avatar-hero">
+                  <img src="assets/img/avatar-2.png" alt="avatar-2">
+                </div>
+                <div class="avatar-hero">
+                  <img src="assets/img/avatar-3.png" alt="avatar-3">
+                </div>
+                <div class="avatar-hero">
+                  <img src="assets/img/avatar-4.png" alt="avatar-4">
+                </div>
+                <div class="avatar-hero">
+                  <img src="assets/img/avatar-2.png" alt="avatar-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img 
+          src="assets/img/hero-img.png" 
+          alt="woman smile with white teeth" 
+          class="inline-block md:hidden lg:inline-block">
+          <img src="assets/img/hero-img-tab.png" alt="woman smile with white teeth" class="hidden md:inline-block lg:hidden">
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section id="service" class="wrapper pt-36 pb-36">
+        <div class="flex flex-col md:flex-row items-start justify-between mb-32 md:mb-44 gap-10 md:gap-0">
+          <div class="lg:w-2/5 md:w-1/2">
+            <h6 class="title-snap">highest level of service</h6>
+            <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Our team has only one mission that is to <span class="bg-gold">take care your smile</span></h2>
+          </div>
+          <div class="md:w-2/5 font-medium text-lg leading-[150%] text-gray-text">
+            <p class="mb-5">
+              We consider all the drivers of change gives you the blocks & components you need to change to create a truly professional website.
+            </p>
+            <p>
+              Come see us and let us help you achieve perfect oral health and a smile you’ll be proud of! Our experienced and compassionate team is dedicated to making your dental experience as pleasant and rewarding as possible.
+            </p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 justify-between gap-5">
+          <div class="card-service bg-blue text-white">
+            <div>
+              <img src="assets/img/icon/teeth-clean.png" alt="teeth cleaning icon" class="mb-2">
+            </div>
+            <h5 class="font-semibold text-xl leading-[150%]">Teeth Cleaning</h5>
+            <p class="text-gray-light font-medium text-base leading-[150%]">Maintain your oral hygiene with regular cleanings. Achieve a brighter, healthier smile.</p>
+            <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+          </div>
+          <div class="card-service bg-gray-light text-dark">
+            <div>
+              <img src="assets/img/icon/teeth-white.png" alt="teeth whitening icon" class="mb-2">
+            </div>
+            <h5 class="font-semibold text-xl leading-[150%]">Teeth Whitening</h5>
+            <p class="text-gray-text font-medium text-base leading-[150%]">Boost your confidence with whiter, cleaner teeth. Fast and safe process.</p>
+            <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+          </div>
+          <div class="card-service bg-blue text-white">
+            <div>
+              <img src="assets/img/icon/pediatric-icon.png" alt="pediatric icon" class="mb-2">
+            </div>
+            <h5 class="font-semibold text-xl leading-[150%]">Pediatric Dental Care</h5>
+            <p class="text-gray-light font-medium text-base leading-[150%]">Special dental care for your children with a friendly and fun approach.</p>
+            <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+          </div>
+          <div class="card-service bg-gray-light text-dark">
+            <div>
+              <img src="assets/img/icon/implant-icon.png" alt="implant icon" class="mb-2">
+            </div>
+            <h5 class="font-semibold text-xl leading-[150%]">Dental Implants</h5>
+            <p class="text-gray-text font-medium text-base leading-[150%]">Permanent solution for missing teeth. Restore your teeth's function and aesthetics.</p>
+            <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="wrapper py-36">
+        <div class="flex flex-col md:flex-row gap-56 md:gap-20 lg:gap-0 justify-between">
+          <div class="md:w-1/2 lg:w-3/5 relative">
+            <img src="assets/img/smile-with-doctor.png" alt="smile with doctor">
+            <img src="assets/img/doctor-about.png" alt="doctor owner" class="absolute -bottom-32 md:bottom-0 lg:-bottom-32 right-0">
+          </div>
+          <div class="lg:w-1/3 md:w-1/2">
+            <h6 class="title-snap">who we are</h6>
+            <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Help you achieve a <span class="bg-gold">healthy, confident smile</span> that lasts a lifetime</h2>
+            <p class="text-gray-text leading-[150%] font-medium text-lg my-10">
+              At UedashikA, we are dedicated to providing the best dental care. Our professional team is always ready to serve you with the latest technology and a personal approach.
+            </p>
+            <a href="#" class="primary-btn">Learn More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefit Section -->
+      <section id="benefit" class="wrapper py-36 bg-gray-light bg-line bg-no-repeat bg-contain bg-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+          <div class="row-start-2 md:row-start-1 mt-10">
+            <h6 class="title-snap">what we do</h6>
+            <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">
+              We're one of the most <span class="bg-gold">fastest-growing dental care</span> companies</h2>
+            <p class="text-gray-text leading-[150%] font-medium text-lg my-10">
+              Our team of skilled and experienced dental professionals strives to create  comfortable and welcoming environment for each and every patient. From routine cleanings to complex procedures.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <img src="assets/img/tech-dental.png" alt="tech dental">
+          </div>
+        </div>
+        <div class="mt- md:-mt-20 lg:-mt-48 grid grid-cols-1 md:grid-cols-4 gap-5 relative">
+          <div class="md:col-span-2 md:col-start-1 md:row-start-1">
+              <img src="assets/img/doctor-with-children.png" alt="doctor with children">
+          </div>
+          <div class="card-service md:col-start-2 lg:col-start-2 md:row-start-1 md:col-span-3 lg:col-span-2 md:mt-5 md:ml-20 lg:ml-0 md:mr-10 lg:mr-0 bg-[rgba(255,255,255,0.7)] backdrop-blur-sm h-max border border-gray-light p-5">
+              <h5 class="font-semibold text-2xl leading-[150%]">Friendly and Personalized Service</h5>
+              <p class="text-gray-text font-medium text-base leading-[150%]">We offer personalized care tailored to your specific needs, with a friendly and approachable team.</p>
+          </div>
+          <div class="card-service md:-mt-20 lg:-mt-44 bg-[rgba(255,215,0,0.7)] backdrop-blur-sm h-max md:col-start-1 lg:col-start-2 md:row-start-2 md:ml-5 md:col-span-2 border border-gray-light p-5">
+              <h5 class="font-semibold text-2xl leading-[150%]">Professional and Experienced Care</h5>
+              <p class="text-gray-text font-medium text-base leading-[150%]">Our team consists of highly trained and experienced dental professionals dedicated to your oral health.</p>
+          </div>
+          <div class="card-service md:-mt-36 lg:-mt-72 bg-[rgba(0,8,20,0.6)] backdrop-blur-sm h-max md:col-span-2 lg:col-span-1 md:row-start-2 md:col-start-3 lg:col-start-4 text-white border border-gray-light p-5">
+              <h5 class="font-semibold text-2xl leading-[150%]">Latest Technology</h5>
+              <p class="text-gray-light font-medium text-base leading-[150%]">We use state-of-the-art dental technology to ensure you receive the best care possible.</p>
+          </div>
+      </div>
+      
+        
+      </section>
+
+      <!-- Team Section -->
+      <section class="wrapper pt-36 pb-72">
+        <div class="text-center flex flex-col items-center mb-[72px]">
+          <h6 class="title-snap">experienced and skilled</h6>
+          <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Meet our <span class="bg-gold">Dentist</span></h2>
+          <p class="text-gray-text leading-[150%] font-medium text-lg mt-6 md:w-[570px]">Get to know our experienced adn dedicated team of dentists, committed to providing the best care for you.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-44 md:gap-10">
+          <div class="relative flex justify-center">
+            <div>
+              <img src="assets/img/doctor-1.png" alt="doctor 1">
+            </div>
+            <div class="absolute -bottom-28 lg:-left-11">
+              <div class="p-5 w-64 bg-white rounded-2xl border border-gray-light">
+                <h5 class="font-semibold text-2xl leading-[150%] mb-[10px]">Dr. Emily Johnson</h5>
+                <p class="text-gray-text font-medium text-lg leading-[150%] mb-[10px]">Lead Dentist</p>
+                <p class="text-gray-text font-medium text-sm leading-[150%]">
+                  With over 20 years of experience, Dr. Emily specializes in restorative and cosmetic dentistry.
+                </p>
+              </div>
+              <div class="absolute -bottom-4 -left-4">
+                <img src="assets/img/vector/border-rounded-gold.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex justify-center">
+            <div>
+              <img src="assets/img/doctor-2.png" alt="doctor 2">
+            </div>
+            <div class="absolute -bottom-28 lg:-left-11">
+              <div class="p-5 w-64 bg-white rounded-2xl">
+                <h5 class="font-semibold text-2xl leading-[150%] mb-[10px]">Dr. John Smith</h5>
+                <p class="text-gray-text font-medium text-lg leading-[150%] mb-[10px]">Orthodontist</p>
+                <p class="text-gray-text font-medium text-sm leading-[150%]">
+                  Specializing in braces and Invisalign, Dr. John helps patients achieve perfectly aligned teeth.
+                </p>
+              </div>
+              <div class="absolute -bottom-4 -left-4">
+                <img src="assets/img/vector/border-rounded-blue.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex justify-center">
+            <div>
+              <img src="assets/img/doctor-3.png" alt="doctor 3">
+            </div>
+            <div class="absolute -bottom-28 lg:-left-11">
+              <div class="p-5 w-64 bg-white rounded-2xl">
+                <h5 class="font-semibold text-2xl leading-[150%] mb-[10px]">Dr. Michael Lee</h5>
+                <p class="text-gray-text font-medium text-lg leading-[150%] mb-[10px]">Pediatric Dentist</p>
+                <p class="text-gray-text font-medium text-sm leading-[150%]">
+                  Dr. Michael provides expert dental care for children, ensuring a comfortable experience.
+                </p>
+              </div>
+              <div class="absolute -bottom-4 -left-4">
+                <img src="assets/img/vector/border-rounded-gold.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex md:hidden lg:flex justify-center">
+            <div>
+              <img src="assets/img/doctor-4.png" alt="doctor 4">
+            </div>
+            <div class="absolute -bottom-28 lg:-left-11">
+              <div class="p-5 w-64 bg-white rounded-2xl">
+                <h5 class="font-semibold text-2xl leading-[150%] mb-[10px]">Dr. Sarah Martinez</h5>
+                <p class="text-gray-text font-medium text-lg leading-[150%] mb-[10px]">Periodontist</p>
+                <p class="text-gray-text font-medium text-sm leading-[150%]">
+                  Dr. Martinez focuses on the prevention and treatment of gum diseases.
+                </p>
+              </div>
+              <div class="absolute -bottom-4 -left-4">
+                <img src="assets/img/vector/border-rounded-blue.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimoni Section -->
+      <section class="wrapper py-36">
+        <div class="mb-[72px]">
+          <h6 class="title-snap">what they say</h6>
+          <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Our patients <span class="bg-gold">love us</span></h2>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between gap-12">
+          <div class="w-max">
+            <div class="text-center">
+              <div class="relative">
+                <img src="assets/img/avatar-4.png" alt="avatar 1" class="w-28 rounded-full">
+                <div class="bg-gold w-9 h-9 rounded-full flex justify-center items-center absolute bottom-0 right-0">
+                  <iconify-icon icon="iconoir:quote-solid" class="text-blue"></iconify-icon>
+                </div>
+              </div>
+              <h5 class="font-bold !leading-[150%] text-xl mt-3">Jane D.</h5>
+              <p class="text-gray-text text-base"> 28 y, Jakarta</p>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div>
+              <p class="text-2xl leading-[150%] font-medium text-gray-text">
+                “I had an amazing experience at <span class="font-bold">UedashikA.</span> Dr. Smith was very professional and made me feel at ease. My teeth have never looked better.”
+              </p>
+            </div>
+            <div class="flex gap-2 mt-9">
+              <button class="w-[50px] h-[50px] border border-gray-light rounded-full flex justify-center items-center">
+                <iconify-icon icon="gg:arrow-left" class="text-2xl"></iconify-icon>
+              </button>
+              <button class="w-[50px] h-[50px] bg-blue border border-gray-light rounded-full flex justify-center items-center">
+                <iconify-icon icon="gg:arrow-right" class="text-2xl text-white"></iconify-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Appointment/Contact Section -->
+      <section id="appointment" class="wrapper py-36 bg-gray-light">
+        <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-0">
+          <div class="md:w-2/5">
+            <h6 class="title-snap">contact us</h6>
+            <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Schedule your <br><span class="bg-gold">appointment now</span></h2>
+            <p class="text-gray-text leading-[150%] font-medium text-lg my-10">
+              Don’t wait, schedule your appointment easily and quickly. Your dental health is our priority.
+            </p>
+
+            <form action="" class="mt-11 flex flex-col gap-7">
+              <input type="text" name="name" id="name" autocomplete="given-name" placeholder="Your Name" class="block w-full rounded-2xl border border-black border-opacity-40 py-6 px-8 text-black text-base placeholder:text-gray-text">         
+              <input type="number" name="phone" id="phone" autocomplete="given-phone" placeholder="Your Phone" class="block w-full rounded-2xl border border-black border-opacity-40 py-6 px-8 text-black text-base placeholder:text-gray-text">         
+              <input type="email" name="email" id="email" autocomplete="given-email" placeholder="Your Email" class="block w-full rounded-2xl border border-black border-opacity-40 py-6 px-8 text-black text-base placeholder:text-gray-text">  
+              <div class="flex gap-4">
+                <input type="date" name="date" id="date" class="flex-auto rounded-2xl border border-black border-opacity-40 py-6 px-8 text-black text-base placeholder:text-gray-text">
+                <input type="time" name="time" id="time" placeholder="Select Date" class="flex-auto rounded-2xl border border-black border-opacity-40 py-6 px-8 text-black text-base placeholder:text-gray-text">
+              </div>
+              <button class="primary-btn">Book Now <iconify-icon icon="gg:arrow-right" class="text-white text-2xl"></iconify-icon></button>       
+            </form>
+          </div>
+          <div class="md:w-1/2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170348.1217011326!2d11.37702856485532!3d48.154792953752164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sM%C3%BCnchen%2C%20Jerman!5e0!3m2!1sid!2sid!4v1721224476727!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-xl w-full h-96 md:h-full"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Info -->
+      <section class="wrapper py-24 flex flex-col md:flex-row gap-8 md:gap-5">
+        <div class="md:w-1/3 md:border-r-4 border-gold">
+          <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Clinic Hours</h4>
+          <ul class="text-gray-text text-lg flex flex-col gap-3">
+            <li class="!leading-[150%]"><span class="text-black font-medium">Monday - Friday: </span>08:00 AM - 03:00 PM</li>
+            <li class="!leading-[150%]"><span class="text-black font-medium">Saturday: </span>08:00 AM - 01:00 PM</li>
+            <li class="!leading-[150%]"><span class="text-black font-medium">Sunday: </span>Closed</li>
+          </ul>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between flex-auto gap-8 md:gap-0">
+          <div class="md:w-1/3">
+            <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Contact Information</h4>
+            <ul class="text-gray-text text-lg flex flex-col gap-3">
+              <li class="!leading-[150%]"><span class="text-black font-medium">Address: </span>123 Smile Avenue, Birmingham City, DC 20001</li>
+              <li class="!leading-[150%]"><span class="text-black font-medium">Phone: </span>940-394-3344</li>
+              <li class="!leading-[150%]"><span class="text-black font-medium">Email: </span>info@uedashika.com</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Social Media</h4>
+            <ul class="text-gray-text text-lg flex flex-col gap-3">
+              <li class="!leading-[150%]"><a href="#" class="text-hover">Instagram</a></li>
+              <li class="!leading-[150%]"><a href="#" class="text-hover">Facebook</a></li>
+              <li class="!leading-[150%]"><a href="#" class="text-hover">X (Twitter)</a></li>
+              <li class="!leading-[150%]"><a href="#" class="text-hover">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Quick Links</h4>
+            <ul class="text-gray-text text-lg flex flex-col gap-3">
+              <li class="!leading-[150%]"><a href="#" class="text-hover">Home</a></li>
+              <li class="!leading-[150%]"><a href="#" class="text-hover">Services</a></li>
+              <li class="!leading-[150%]"><a href="#" class="text-hover">About Us</a></li>
+              <li class="!leading-[150%]"><a href="#" class="text-hover">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright -->
+      <section class="wrapper py-10 bg-blue-dark text-white flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center bg-line bg-no-repeat bg-cover bg-center">
+        <h4 class="text-2xl font-bold">UedashikA</h4>
+        <p class="text-sm">Copyright &copy; 2024. All rights reserved. <span class="text-gold italic">built by ~ Paruk Azziyi ~</span></p>
+      </section>
+    </footer>
+
+    <!-- Iconify -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+  </body>
+</html>

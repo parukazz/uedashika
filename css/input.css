@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-font: "Urbanist", sans-serif;
+  }
+
+  * {
+    @apply font-urbanist;
+  }
+  
+  html {
+    @apply bg-white scroll-smooth;
+  }
+
+}
+
+.text-hover:hover {
+  @apply text-blue transition duration-300;
+}
+
+.wrapper {
+  @apply px-[5%] lg:px-[100px];
+}
+
+.title-snap {
+  @apply uppercase font-semibold text-sm text-blue tracking-widest mb-5;
+}
+
+.avatar-hero {
+  @apply w-9 h-9 rounded-full border-2 border-white overflow-hidden -ml-2;
+}
+
+.avatar-hero:first-child {
+  @apply ml-0
+}
+
+.primary-btn {
+  @apply bg-blue text-white gap-2 py-5 px-6 flex items-center rounded-lg text-base font-bold hover:bg-blue-hover transition duration-300 w-max;
+}
+
+.card-service {
+  @apply py-10 px-8 rounded-2xl flex flex-col gap-4 justify-start;
+}
+
+.text-hover {
+  @apply hover:text-blue transition duration-300;
+}
